@@ -1,0 +1,10 @@
+set palette defined (-5 0 0 1, 0 1 1 1, 5 1 0 0)
+set terminal png
+
+
+
+set output "sol_exacte.png"
+plot "sol_exacte.dat" u 1:2:3 with image
+set title "sol_exacte.dat"
+show title
+
