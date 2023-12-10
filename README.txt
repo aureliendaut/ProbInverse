@@ -11,7 +11,7 @@ Compilation
 Pour compiler le programme, il suffit d'exécuter la commande 'make' à partir du terminal. Cela va créer un exécutable nommé 'chp'.
 2 options de compilation sont possibles, 1 pour le débuggage : 'DEBUG_FLAG' ; 1 pour l'optimisation des calculs : 'OPTIM_FLAG'. Pour changer celle-ci il faut changer le nom dans le Makefile de 'CXX_FLAGS'.
 
-Exécution
+Exécution du code
 
 Pour exécuter le programme, utilisez la commande './chp "parametres.txt" ', où 'parametres.txt' contient les paramètres suivants :
 - 'Nx' : nombre de points de discrétisation dans la direction x.
