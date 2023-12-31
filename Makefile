@@ -20,7 +20,7 @@ $(PROG) : $(SRC)
 
 # Compile and run
 run : $(PROG)
-	./$(PROG)
+	./$(PROG) "parametres.txt"
 
 # Delete compilation files
 clean :
