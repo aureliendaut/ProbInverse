@@ -6,6 +6,28 @@
 #include "function.h"
 #include "GC.h"
 #include "parametres.h"
+
+typedef double (*vecteur2D)[2];
+typedef double vecteur[2];
+
+//calcul de f avec les polynômes de Lagrange définis dans function.c
+void calcul_f(vecteur2D a, vecteur2D P_a, vecteur X) 
+{
+
+    vecteur2D f;
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++) 
+        {
+            f = lagrange(a,P_a,X);
+        }
+    }
+}
+
+
+
+
 int main(int argc, char *argv[]) {
    if (argc != 2) {
       printf("Entrer le nom du fichier de paramètres \n");
